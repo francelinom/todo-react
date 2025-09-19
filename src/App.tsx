@@ -5,6 +5,7 @@ import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import TrashIcon from "./assets/icons/trash.svg?react";
 import Badge from "./components/badge";
 import Button from "./components/button";
+import ButtonIcon from "./components/button-icon";
 import Icon from "./components/icon";
 import Text from "./components/Text";
 
@@ -31,10 +32,10 @@ export default function App() {
       </div>
 
       <div className="flex gap-1">
-        <Icon svg={TrashIcon} className="fill-pink-base"/>
-        <Icon svg={ChackIcon} className="fill-green-base"/>
-        <Icon svg={PencilIcon} className="fill-green-dark"/>
-        <Icon svg={PlusIcon} className="fill-pink-dark"/>
+        <Icon svg={TrashIcon} className="fill-pink-base" />
+        <Icon svg={ChackIcon} className="fill-green-base" />
+        <Icon svg={PencilIcon} className="fill-green-dark" />
+        <Icon svg={PlusIcon} className="fill-pink-dark" />
         <Icon svg={SpinnerIcon} animate />
       </div>
 
@@ -45,6 +46,12 @@ export default function App() {
 
       <div>
         <Button icon={PlusIcon}>Adicionar tarefa</Button>
+      </div>
+
+      <div className="flex gap-2">
+        <ButtonIcon icon={TrashIcon}>Adicionar tarefa</ButtonIcon>
+        <ButtonIcon icon={TrashIcon} variant="tertiary">Adicionar tarefa</ButtonIcon>
+        <ButtonIcon icon={TrashIcon} variant="secondary">Adicionar tarefa</ButtonIcon>
       </div>
     </div>
   )
