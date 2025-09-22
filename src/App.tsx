@@ -6,6 +6,7 @@ import TrashIcon from "./assets/icons/trash.svg?react";
 import Badge from "./components/badge";
 import Button from "./components/button";
 import ButtonIcon from "./components/button-icon";
+import Card from "./components/card";
 import Icon from "./components/icon";
 import InputCheckbox from "./components/input-checkbox";
 import InputText from "./components/input-text";
@@ -57,11 +58,17 @@ export default function App() {
       </div>
 
       <div>
-        <InputText/>
+        <InputText />
       </div>
 
       <div>
-        <InputCheckbox/>
+        <InputCheckbox />
+      </div>
+
+      <div>
+        <Card className="w-60" size="md">
+          Texto
+        </Card>
       </div>
     </div>
   )
