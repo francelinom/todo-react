@@ -7,12 +7,13 @@ import Badge from "./components/badge";
 import Button from "./components/button";
 import ButtonIcon from "./components/button-icon";
 import Icon from "./components/icon";
+import InputText from "./components/input-text";
 import Text from "./components/Text";
 
 export default function App() {
 
   return (
-    <div className="grid gap-1">
+    <div className="grid gap-10 m-5">
       <div className="flex flex-col gap-4 p-4">
         <Text variant="body-md-bold" className="text-pink-base">
           Olá Mundo - ToDo List
@@ -52,6 +53,10 @@ export default function App() {
         <ButtonIcon icon={TrashIcon}>Adicionar tarefa</ButtonIcon>
         <ButtonIcon icon={TrashIcon} variant="tertiary">Adicionar tarefa</ButtonIcon>
         <ButtonIcon icon={TrashIcon} variant="secondary">Adicionar tarefa</ButtonIcon>
+      </div>
+
+      <div>
+        <InputText/>
       </div>
     </div>
   )
